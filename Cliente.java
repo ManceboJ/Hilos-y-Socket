@@ -25,13 +25,13 @@ public class Cliente {
 					
 			//Creamos el socket
 			Socket socket = new Socket(IPServer, 9999);
-			System.out.println("Creado Socket");
 			
 			// Creamos buffer de entrada
 			BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			
 			
 			// Imprimimos mensaje del servidor con las opciones
+			System.out.println(input.readLine());
 			System.out.println(input.readLine());
 			System.out.println(input.readLine());
 			System.out.println(input.readLine());

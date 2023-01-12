@@ -57,7 +57,8 @@ class WorkerThread extends Thread{
 			PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
 				
 			// Imprimimos las opciones
-			out.println("Cliente " + cliente + " bienvenido a la práctica 1 de Hilos y Socket. Por favor elija una de las siguientes opciones pulsado del 1 al 5.");		
+			out.println("Cliente " + cliente);
+			out.println("Bienvenido a la práctica 1 de Hilos y Socket. Por favor elija una de las siguientes opciones pulsado del 1 al 5.");		
 			out.println("1. ¿Cuál es el nombre de la asignatura de la práctica?");
 			out.println("2. ¿Donde se imparte la asignatura?");
 			out.println("3. ¿Quien es el profesor?");
